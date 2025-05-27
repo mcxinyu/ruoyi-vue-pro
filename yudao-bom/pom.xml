@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>${i.groupId}</groupId>
+    <artifactId>yudao-bom</artifactId>
+    <version>${i.version}</version>
+    <packaging>pom</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>a bom for this project</description>
+    <url>https://github.com/mcxinyu/ruoyi-vue-pro</url>
+
+    <properties>
+        <i.groupId>com.github.mcxinyu.ruoyi-vue-pro</i.groupId>
+        <i.version>2.6.0.s3.1</i.version>
+        <flatten-maven-plugin.version>1.6.0</flatten-maven-plugin.version>
+    </properties>
+
+    <dependencyManagement>
+        <!-- @formatter:off-->
+        <dependencies>
+            <!-- all-modules -->
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-dependencies</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-framework</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-server</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-system</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-infra</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-member</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-bpm</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-report</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-mp</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-pay</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-mall</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-crm</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-erp</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-ai</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-iot</artifactId><version>${i.version}</version></dependency>
+
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-common</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-mybatis</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-redis</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-web</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-security</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-websocket</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-monitor</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-protection</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-job</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-mq</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-excel</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-test</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-biz-tenant</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-biz-data-permission</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-spring-boot-starter-biz-ip</artifactId><version>${i.version}</version></dependency>
+
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-product</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-promotion</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-trade</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-statistics</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-trade-api</artifactId><version>${i.version}</version></dependency>
+
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-iot-api</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-iot-biz</artifactId><version>${i.version}</version></dependency>
+            <dependency><groupId>${i.groupId}</groupId><artifactId>yudao-module-iot-plugins</artifactId><version>${i.version}</version></dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <!-- 统一 revision 版本 -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+                <version>${flatten-maven-plugin.version}</version>
+                <configuration>
+                    <flattenMode>bom</flattenMode>
+                    <updatePomFile>true</updatePomFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>flatten</goal>
+                        </goals>
+                        <id>flatten</id>
+                        <phase>process-resources</phase>
+                    </execution>
+                    <execution>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                        <id>flatten.clean</id>
+                        <phase>clean</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
